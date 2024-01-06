@@ -4,7 +4,7 @@ const homeRouter = express.Router();
 
 //user routes
 
-homeRouter.get("/", async (_, res) => {
+homeRouter.get("/", async (req, res) => {
   try {
     const {page, limit } = req.query;
 
